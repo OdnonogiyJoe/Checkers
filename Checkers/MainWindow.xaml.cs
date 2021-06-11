@@ -53,11 +53,11 @@ namespace Checkers
         {
             playerHitBox = new Rect(Canvas.GetLeft(player), Canvas.GetTop(player), player.Width, player.Height);
            
-            if (moveLeft == true && Canvas.GetLeft(player) > 0)
+            if (moveLeft == true && Canvas.GetLeft(player) > 200)
             {
                 Canvas.SetLeft(player, Canvas.GetLeft(player) - playerSpeed);
             }
-            if (moveRight == true && Canvas.GetLeft(player) + 80 < Application.Current.MainWindow.Width)
+            if (moveRight == true && Canvas.GetLeft(player) + 280 < Application.Current.MainWindow.Width)
             {
                 Canvas.SetLeft(player, Canvas.GetLeft(player) + playerSpeed);
             }
